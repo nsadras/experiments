@@ -118,7 +118,7 @@ def mosaic(filename, n_samples):
     plt.ylim(vor.min_bound[1], vor.max_bound[1])
 
     plt.axis('off')
-    plt.savefig('{0}_mosaic.png'.format(filename), bbox_inches='tight', pad_inches=0)
+    plt.savefig('{0}_mosaic.png'.format(filename.split(".")[0]), bbox_inches='tight', pad_inches=0)
     plt.figure()
     plt.imshow(img)
     plt.show()
